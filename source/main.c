@@ -13,14 +13,13 @@
 #define APP_OUTPUT              "/switch/sigpatch-updater/sigpatch-updater.nro"
 #define OLD_APP_PATH            "/switch/sigpatch-updater.nro"
 
-#define APP_VERSION             "0.1.3"
-#define CURSOR_LIST_MAX         2
+#define APP_VERSION             "0.1.4"
+#define CURSOR_LIST_MAX         1
 
 
 const char *OPTION_LIST[] =
 {
     "= Update Sigpatches (For Atmosphere Users)",
-    "= Update Sigpatches (For Hekate / Kosmos Users)",
     "= Update this app"
 };
 
@@ -107,15 +106,6 @@ int main(int argc, char **argv)
                 else
                 {
                     printDisplay("Failed to download ams sigpatches\n");
-                }
-                break;
-
-            case UP_JOONIE:
-                if (downloadFile(HEKATE_SIG_URL, TEMP_FILE, OFF))
-                    unzip(TEMP_FILE);
-                else
-                {
-                    printDisplay("Failed to download hekate sigpatches\n");
                 }
                 break;
 

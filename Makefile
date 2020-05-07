@@ -38,8 +38,8 @@ include $(DEVKITPRO)/libnx/switch_rules
 #   NACP building is skipped as well.
 #---------------------------------------------------------------------------------
 APP_TITLE   := 	Sigpatch-Updater
-APP_AUTHOR  := 	TotalJustice
-APP_VERSION := 	0.1.3
+APP_AUTHOR  := 	eXhumer
+APP_VERSION := 	0.1.4
 
 TARGET		:=	$(notdir $(CURDIR))
 BUILD		:=	build
